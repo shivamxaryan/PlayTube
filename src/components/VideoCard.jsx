@@ -12,7 +12,7 @@ const VideoCard = ({ video }) => {
                 <div className="relative h-48 md:h-40 md:rounded-xl overflow-hidden">
                     <img
                         className="h-full w-full object-cover"
-                        src={video?.thumbnails[0]?.url}
+                        src={video?.thumbnails[0]?.url} alt="X"
                     />
                     {video?.lengthSeconds && (
                         <VideoLength time={video?.lengthSeconds} />
@@ -23,7 +23,7 @@ const VideoCard = ({ video }) => {
                         <div className="flex h-9 w-9 rounded-full overflow-hidden">
                             <img
                                 className="h-full w-full object-cover"
-                                src={video?.author?.avatar[0]?.url}
+                                src={video?.author?.avatar[0]?.url} alt="X"
                             />
                         </div>
                     </div>

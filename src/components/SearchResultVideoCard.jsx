@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { abbreviateNumber } from "js-abbreviation-number";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -15,10 +14,8 @@ const SearchResultVideoCard = ({ video }) => {
             src={video?.thumbnails[0]?.url}
             alt="X"
           />
-
           {video?.lengthSeconds && <VideoLength time={video?.lengthSeconds} />}
         </div>
-
         <div className="flex flex-col ml-4 md:ml-6 mt-4 md:mt-0 overflow-hidden">
           <span className="text-lg md:text-2xl font-semibold line-clamp-2 text-white">
             {video?.title}
@@ -26,7 +23,6 @@ const SearchResultVideoCard = ({ video }) => {
           <span className="empty:hidden text-sm line-clamp-1 md:line-clamp-2 text-white/[0.7] md:pr-24 md:my-4">
             {video?.descriptionSnippet}
           </span>
-
           <div className="hidden md:flex items-center">
             <div className="flex items-start mr-3">
               <div className="flex h-9 w-9 rounded-full overflow-hidden">

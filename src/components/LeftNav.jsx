@@ -9,20 +9,20 @@ const LeftNav = () => {
   const { selectedCategory, setSelectedCategory, mobileMenu } =
     useContext(Context);
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const clickHandler = (name, type) => {
-        switch (type) {
-            case "category":
-                return setSelectedCategory(name);
-            case "home":
-                return setSelectedCategory(name);
-            case "menu":
-                return false;
-            default:
-                break;
-        }
-    };
+  const clickHandler = (name, type) => {
+    switch (type) {
+      case "category":
+        return setSelectedCategory(name);
+      case "home":
+        return setSelectedCategory(name);
+      case "menu":
+        return false;
+      default:
+        break;
+    }
+  };
 
   return (
     <div
@@ -50,9 +50,7 @@ const LeftNav = () => {
           );
         })}
         <hr className="my-5 border-white/[0.2]" />
-        <div className="text-white/[0.5] text-[12px]">
-          Clone by: Shivam 
-        </div>
+        <div className="text-white/[0.5] text-[12px]">Clone by: Shivam</div>
       </div>
     </div>
   );

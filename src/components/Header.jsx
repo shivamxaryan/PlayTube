@@ -57,9 +57,9 @@ const Header = () => {
           <img
             className="h-full hidden dark:md:block"
             src={ytLogo}
-            alt="Youtube"
+            alt="Playtube"
           />
-          <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" />
+          <img className="h-full md:hidden" src={ytLogoMobile} alt="Playtube" />
         </Link>
       </div>
       <div className="group flex items-center">
